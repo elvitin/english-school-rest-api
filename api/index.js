@@ -1,7 +1,11 @@
 const express = require('express');
 const routes = require('./routes');
 const app = express();
-const port = 3000;
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 routes(app);
 

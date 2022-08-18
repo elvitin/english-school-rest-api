@@ -5,5 +5,4 @@ const router = Router();
 
 router.get('/levels', LevelController.getLevel);
 
-
 module.exports = router;
